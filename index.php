@@ -13,12 +13,11 @@ $db = new MysqliDb(
     $config['db_pass'],
     $config['db_name']
 );
-
 $request = $_SERVER['REQUEST_URI'];
  
 define('BASE_PATH', '/mvc/');
 
-
+echo "welcome";
 $controller = new UserController($db);
 var_dump($request);
 switch ($request) {
