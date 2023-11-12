@@ -23,10 +23,10 @@ class UserController {
 
     public function addUser() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $username = $_POST['username'];
+            $username = $_POST['email'];
             $password = $_POST['password'];
             $data = [
-                'username' => $username,
+                'email' => $username,
                 'password' => $password,
             ];
 
@@ -55,10 +55,11 @@ class UserController {
 
     public function updateUser($id) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $username = $_POST['name'];
+            $username = $_POST['email'];
             $password = $_POST['password'];
             $data = [
-                'name' => $username,
+               
+                'email' => $username,
                 'password' => $password,
             ];
 

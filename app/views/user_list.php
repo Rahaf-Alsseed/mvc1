@@ -8,7 +8,7 @@
  
     <ul>
         <?php foreach ($users as $user) { ?>
-            <li><?= $user['name']; ?>
+            <li><?= $user['email']; ?>
                 <a href="edit?id=<?= $user['id'] ?>">Edit</a>
                 <a href="delete?id=<?= $user['id'] ?>">Delete</a>
             </li>
@@ -17,7 +17,7 @@
 
     <h2>Add User</h2>
     <form method="post" action="add">
-        <input type="text" name="username" placeholder="Username" required>
+        <input type="text" name="email" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Add User</button>
     </form>

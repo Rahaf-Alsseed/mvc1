@@ -35,4 +35,3 @@ class UserModel {
         return $this->db->get('users');
     }
 }
-echo "hello";
